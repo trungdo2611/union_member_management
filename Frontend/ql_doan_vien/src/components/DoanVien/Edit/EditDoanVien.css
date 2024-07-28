@@ -1,0 +1,42 @@
+.main.EditDoanVien {
+    overflow-y: auto;
+}
+.form.formEdit {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.main.EditDoanVien {
+    overflow-y: auto;
+}
+
+.main.EditDoanVien::-webkit-scrollbar{
+    height: 6px;
+    width: 4px;
+} 
+
+.main.EditDoanVien::-webkit-scrollbar-track { 
+    background-color: transparent;
+}
+
+ .box::-webkit-scrollbar-thumb {
+    border-radius: 100vh !important;
+    background-color: #f5b6be;
+    outline-offset: -1px;
+}
+
+.btn {
+    padding: .7rem .6rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.btnChangeImg {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.btn.btnChangeImg:hover {
+    background-color: rgba(255, 145, 157, 0.8);
+}

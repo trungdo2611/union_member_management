@@ -1,0 +1,109 @@
+.main.mainHome {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    background-image: linear-gradient(
+        106.37deg,
+        #ffe1bc33 29.63%,
+        #ffcfd133 51.55%,
+        #f3c6f133 90.85%
+      ),
+    url('../../imgs/backgroundHong.jpg');
+}
+
+.grow h1 {
+    margin-top: 4rem;
+    color: #333333;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(35);
+}
+
+.imgDoanVienChiBi {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgDoanVienChiBi .doanVienChiBi {
+    transition: imgEffect 2s ease;
+    animation: imgEffect 2s ease;
+    width: 14rem;
+    height: 14rem;
+}
+
+.boxTitle p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.boxTitle {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: var(--pink);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxTitle::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 200%;
+    background: linear-gradient(
+        #00BFFF , #FFD700 
+    );
+    transition: rotate linear;
+    animation: rotate 4s linear infinite;
+}
+
+.boxTitle::after {
+    content: '';
+    position: absolute;
+    background: #0e1528;
+    inset: 5px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes imgEffect {
+    0% {
+        transform: translateY(200%);
+    }
+
+    50% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

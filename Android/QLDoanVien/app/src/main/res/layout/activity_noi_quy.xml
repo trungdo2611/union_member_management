@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoiQuy_Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintTop_toBottomOf="@id/imagebackground"
+        tools:ignore="NotSibling">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagebackground"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/header_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+            <View
+                android:id="@+id/view1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="18dp"
+                android:padding="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/noiquytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:padding="5dp"
+                android:text="Điều Lệ Đoàn"
+                android:textColor="@color/teal_700"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                />
+            <TextView
+                android:id="@+id/dieu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Điều 1:"
+                android:textColor="@color/teal_700"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagebackground"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+            <TextView
+                android:id="@+id/dieu1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="Luôn luôn phấn đấu vì lý tưởng của Đảng và Bác Hồ. Tích cực học tập, lao động rèn luyện, tham gia các hoạt động xã hội, xây dựng và bảo vệ Tổ quốc."
+                android:textColor="@color/black"
+
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dieu1"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:id="@+id/dieu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Điều 2:"
+                android:textColor="@color/teal_700"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dieu1text"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+            <TextView
+                android:id="@+id/dieu2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="Gương mẫu chấp hành và vận động thanh thiếu nhi thực hiện đường lối, chủ trương của Đảng, chính sách và pháp luật của Nhà nước. Tham gia xây dựng, bảo vệ Đảng, chính quyền và các đoàn thể nhân dân. Chấp hành Điều lệ Đoàn và các nghị quyết của Đoàn; tích cực tuyên truyền về tổ chức Đoàn trong thanh niên; sinh hoạt Đoàn và đóng đoàn phí đúng quy định."
+                android:textColor="@color/black"
+
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dieu2"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:id="@+id/dieu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Điều 3:"
+                android:textColor="@color/teal_700"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dieu2text"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+            <TextView
+                android:id="@+id/dieu3text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="Liên hệ mật thiết với thanh niên, tích cực xây dựng Hội Liên hiệp Thanh niên Việt Nam, Hội Sinh viên Việt Nam và các thành viên khác của Hội Liên hiệp Thanh niên Việt Nam, Đội Thiếu niên Tiền phong Hồ Chí Minh; giúp đỡ thanh niên và đội viên trở thành đoàn viên."
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dieu3"
+                tools:ignore="TextSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:itemPaddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

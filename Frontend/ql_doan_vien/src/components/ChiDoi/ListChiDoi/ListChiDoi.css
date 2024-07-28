@@ -1,0 +1,28 @@
+.content-area-table.tableChiDoi {
+    height: 100% !important;
+    margin-top: .1rem;
+    padding: 12px 16px 1rem 16px;
+}
+.data-table-title.titleChiDoi {
+    text-align: center;
+}
+
+.content-area-table.tableChiDoi table td,
+.content-area-table.tableChiDoi table th {
+    padding: 2px 4px;
+}
+
+.item__icon.icontable {
+    padding: 0 3px;   
+}
+.item__icon.icontable svg {
+    padding: 2px;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.item__icon.icontable svg:hover {
+    background-color: var(--pink);
+}

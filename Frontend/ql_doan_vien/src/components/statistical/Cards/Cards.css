@@ -1,0 +1,33 @@
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 12px 10px 0 10px;
+}
+
+.area-card {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 10px 6px 10px;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+    text-align: center;
+    line-height: 2;
+    flex-direction: column;
+}
+
+.area-card-info {
+    color: #fff;
+    font-size: 20px;
+}
+
+.card-detail {
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+.card-detail:hover {
+    text-decoration-line: underline;
+}

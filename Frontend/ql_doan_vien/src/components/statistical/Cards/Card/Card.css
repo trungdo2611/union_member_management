@@ -1,0 +1,11 @@
+.area-card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon svg{
+   width: 100px;
+   height: 100px;
+    color: #fff;
+}

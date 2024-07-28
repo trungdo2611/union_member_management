@@ -1,0 +1,67 @@
+.main {
+    margin-top: 48px;
+}
+
+.doanvien__list {
+    overflow-y: auto;
+    padding-bottom: 10rem;
+    width: 100%;
+    margin-left: -4px;
+    margin-right: -4px; 
+    position: relative;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.doanVien__contain {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.doanvien__list::-webkit-scrollbar{
+    height: 6px;
+    width: 4px;
+} 
+
+.doanvien__list::-webkit-scrollbar-track { 
+    background-color: transparent;
+}
+
+ .doanvien__list::-webkit-scrollbar-thumb {
+    border-radius: 100vh !important;
+    background-color: #f5b6be;
+    outline-offset: -1px;
+}
+
+.pagination {
+
+}
+
+.pagination a {
+    padding: .4rem .7rem; 
+    margin: 0 2px;
+    background: transparent;
+     color: var(--back); 
+     border-radius: 50%; 
+     box-shadow: 0px 5px 10px 0px rgba(0,0,0,.1);
+}
+
+.pagination a:hover {
+    background: var(--pink);
+    color: #fff;
+    cursor: pointer;
+}
+
+.activePage{
+    background: var(--pink) !important;
+    color: #fff !important;
+}
+
+.disablePage {
+    display: none;
+}

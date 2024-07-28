@@ -1,0 +1,134 @@
+.DoanVien {
+    border-radius: 25px;
+    background-color: #fff;
+    position: relative;
+    height: 20rem;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.card-image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffe1bc;
+}
+.card-content {
+    gap:4px;
+}
+.card-name {
+    font-size: 1.2rem;
+}
+
+h4,
+p {
+    font-size: .8rem;
+}
+
+.image-content {
+    position: relative;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    bottom: -40px;
+    background-color: var(--pink);
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--pink);
+    border-radius: 25px 25px 0 25px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: absolute;
+    top: 119px;
+    left: 0;
+    height: 12.5rem;
+    background: rgba(243, 243, 243, 0.8);
+    display: none;
+   animation: mymove .3s ease;
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+@keyframes mymove {
+    from {
+        opacity: 0;
+        }
+    to {
+        opacity: 1;
+    }
+  }
+
+  .icons::before,
+  .icons::after {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      left: 0;
+      top: -40px;
+      background: rgba(243, 243, 243, 0.8);
+  }
+  
+  .icons::after {
+      border-radius: 0 0 0 25px;
+      background: var(--pink);
+  } 
+
+
+.DoanVien:hover .icons{
+    display: flex; 
+    transition: all .3s linear;
+}
+
+.item__icon {
+    padding: 0 .5rem;
+}
+
+.item__icon svg {
+    padding: .4rem;
+    width: 50px;
+    height: 50px;
+    color: #5a5c60;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.item__icon svg:hover {
+    color: #fff;
+    background-color: var(--pink);
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/homepage"
+    android:title="Trang Chính"
+    android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/lawpage"
+        android:title="Nội Quy"
+        android:icon="@drawable/ic_baseline_ic_24"/>
+    <item
+        android:id="@+id/settingpage"
+        android:title="Cài Đặt"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>

@@ -1,0 +1,9 @@
+.content-area-table.tabelSoTay {
+    margin-top: 5rem;
+    height: 75vh;
+    position: relative;
+}
+
+.content-area-table.tabelSoTay h1 {
+    text-align: center;
+}

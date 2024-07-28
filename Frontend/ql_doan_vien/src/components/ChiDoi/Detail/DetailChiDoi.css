@@ -1,0 +1,5 @@
+.info__box.infoChiDoi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

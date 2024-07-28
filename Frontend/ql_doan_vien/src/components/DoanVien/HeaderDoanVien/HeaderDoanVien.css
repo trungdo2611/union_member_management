@@ -1,0 +1,73 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: var(--boxShadow);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.search {
+    position: relative;
+    width: 40rem;
+    margin: 0 10px;
+  }
+  
+  .search label {
+    position: relative;
+    width: 100%;
+  }
+  
+  .search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--black2);
+  }
+  
+  .search label button {
+    position: absolute;
+    right: 0;
+    bottom: -9.2px;
+    font-size: 1.2rem;
+    margin: 0;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+    background-color: var(--pink);
+  }
+
+  .search label button svg{
+    color: #fff;
+    width: 85px;
+    height: 34px;
+}
+
+.btnAdd {
+    border: none;
+    background: var(--pink);
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding:7px 18px;
+}
+
+.btnAdd:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btnAdd span {
+    font-size: 1rem;
+}
+  
+  

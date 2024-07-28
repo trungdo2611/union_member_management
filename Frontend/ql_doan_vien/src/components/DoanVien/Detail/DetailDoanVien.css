@@ -1,0 +1,117 @@
+.main {
+    position: relative;
+}
+.BackArrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+}
+.BackArrow svg {
+    width: 100%;
+    height: 44px;
+}
+.Arrow {
+    text-decoration: none;
+    color: var(--back);
+}
+.title__info {
+    text-align: center;
+    margin: 1.2rem 0;
+    font-size: 1.4rem;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.box.boxDoanVien {
+    overflow-y: auto;
+}
+
+.image__box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.img__Pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid var(--pink);
+}
+
+.info__item {
+    box-shadow: var(--boxShadow);
+    padding: 1.46rem;
+    margin-bottom: 10px;
+    width: 27rem;
+    line-height: 1.4;
+}
+
+.info__item p {
+    font-size: .9rem;
+}
+
+.box::-webkit-scrollbar{
+    height: 6px;
+    width: 4px;
+} 
+
+.box::-webkit-scrollbar-track { 
+    background-color: transparent;
+}
+
+ .box::-webkit-scrollbar-thumb {
+    border-radius: 100vh !important;
+    background-color: #f5b6be;
+    outline-offset: -1px;
+}
+
+.btnBox {
+    position: absolute;
+    bottom: -3rem;
+    transform: translateX(28rem);
+}
+
+.btnBox.btnDoanVien {
+    display: flex;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.btn.btnEdit {
+    background-color: var(--pink);
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn.btnSoTay {
+    background-color: #f7c16b;
+    color: #fff;
+    margin-right: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.btn.btnSoTay span {
+    margin-right: 4px;
+}
+
+.btn.btnEdit.btnEditDoanVien,
+.btn.btnSoTay {
+    padding-bottom: 2px;
+}
+
+.btn:hover {
+    opacity: .8;
+}

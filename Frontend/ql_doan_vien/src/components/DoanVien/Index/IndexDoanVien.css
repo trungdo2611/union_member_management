@@ -1,0 +1,221 @@
+/* Model create */
+.modal {
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      overflow: auto;
+      display: none;
+  }
+  
+  .modal.open {
+    display: flex;
+  }
+  
+  .form {
+    width: 45rem;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: auto;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    position: relative;
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+  
+  .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--black2);
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 1.7rem;
+  }
+  
+  .modal-comback {
+      position: absolute;
+      left: -4px;
+      top: 0;
+      padding: 12px;
+      cursor: pointer;
+      opacity: 0.8;
+      font-size: 1.4rem;
+  }
+  
+  .modal-comback a {
+      text-decoration : none;
+      color: var(--black2);
+      padding-left: .5rem;
+      margin-bottom: 3rem;
+  }
+  
+  .modal-comback a:hover {
+      color: var(--blue);
+      }
+  
+  .modal-comback a i {
+      padding-right: .3rem
+  }
+  
+  .modal-close:hover {
+      color: var(--blue);
+  }
+  
+  .form .heading {
+    font-size: 1.4rem;
+    margin: .4rem 0;
+    justify-content: center;
+  }
+  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  
+  
+  .form-label,
+  .form-message {
+    text-align: left;
+    
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+      font-size: .7rem;
+      line-height: 1rem;
+      padding: 4px 0 0;
+      color: red !important;
+  }
+  .form-group__containt {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group__item {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  
+  .form-group__containt.form-group__item--select {
+    gap: 14px;
+  }
+  .error {
+      font-size: .8rem;
+      line-height: 1rem;
+      padding: 4px 0 0;
+      color: red !important;
+  }
+  
+  
+  .form-submit {
+      outline: none;
+      background-color: var(--pink);
+      margin-top: 12px;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #fff;
+      border: none;
+      width: 100%;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: rgba(255, 145, 157, 0.8);
+  }
+  
+  .spacer {
+    margin-top: 20px;
+  }
+
+  input[type = "file"] {
+    position: relative;
+    border-radius: .3rem;
+    cursor: pointer;
+  }
+
+  input[type = "file"]::file-selector-button {
+    padding: .2rem .4rem;
+    color: #fff;
+    background-color: var(--pink);
+    border: none;
+    border-radius: .24rem;
+    cursor: pointer;
+  }
+  
+  input[type = "file"]::before {
+    padding: .2rem .3rem .2rem;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 9px;
+    height: 13px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  

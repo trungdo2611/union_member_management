@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/background_listdv">
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        tools:srcCompat="@drawable/avatar" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tên Đoàn Viên"
+            android:textColor="@color/teal_200"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"></TextView>
+
+        <TextView
+            android:id="@+id/dv_chidoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Chi đoàn"
+            android:textColor="@color/teal_200"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"></TextView>
+
+        <TextView
+            android:id="@+id/dv_khoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Khoa"
+            android:textColor="@color/teal_200"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"></TextView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/app_name"
+        android:padding="0dp"
+        android:src="@drawable/ic_baseline_profiledetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graylight"
+    tools:context=".Note_Activity"
+    android:orientation="vertical"
+    android:padding="10dp"
+  >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/aqua"
+        android:padding="15dp"
+        android:text="Trở về"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_arrow_back_ios_new_24"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung cần làm"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:id="@+id/contentEditText"/>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu ghi chú"
+        android:backgroundTint="@color/aqua"
+        android:layout_marginTop="16dp"
+        app:cornerRadius = "20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Nội dung cần làm:"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/notesTextView"/>
+    <ScrollView
+        android:id="@+id/notesScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notesContainer"
+            android:orientation="vertical"
+            />
+
+    </ScrollView>
+</LinearLayout>
